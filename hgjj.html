@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JERRY Intro</title>
+  <style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at center, #111 0%, #000 100%);
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Impact', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+    .name-main {
+      font-size: 120px;
+      color: #e0a800;
+      text-shadow: 0 0 10px #aa3300, 0 0 20px #552200;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    .name-sub {
+      font-size: 40px;
+      color: #00cccc;
+      text-shadow: 0 0 5px #006666, 0 0 10px #003333;
+      margin-top: -20px;
+      animation: fadeInSub 3s ease-out forwards;
+      text-transform: uppercase;
+    }
+
+    .popup {
+      margin-top: 40px;
+      background: #111;
+      border: 2px solid #ffcc00;
+      padding: 30px 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #ffcc00;
+      animation: fadeInPopup 1s ease-out, pulsePopup 2s infinite ease-in-out;
+      text-align: center;
+    }
+
+    .popup h1 {
+      font-size: 50px;
+      color: #ffcc00;
+      margin: 0;
+      text-shadow: 0 0 10px #aa3300;
+    }
+
+    .popup p {
+      font-size: 24px;
+      color: #00ffff;
+      margin-top: 10px;
+      text-shadow: 0 0 5px #006666;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        text-shadow: 0 0 10px #aa3300, 0 0 20px #552200;
+      }
+      50% {
+        transform: scale(1.05);
+        text-shadow: 0 0 15px #cc4400, 0 0 25px #773300;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInSub {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInPopup {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes pulsePopup {
+      0%, 100% { box-shadow: 0 0 20px #ffcc00; }
+      50% { box-shadow: 0 0 40px #ffaa00; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="name-main">JERRY</div>
+    <div class="name-sub">HIMANSHUOFFICIAL583</div>
+  </div>
+  <div class="popup">
+    <h1>NEW SONG COMING</h1>
+    <p>GAME CHANGER</p>
+  </div>
+</body>
+</html>
